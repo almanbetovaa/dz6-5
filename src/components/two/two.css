@@ -1,0 +1,26 @@
+.one_cube{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/cube/img.png");
+  background-size: cover;
+}
+.two_cube{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/cube/img_1.png");
+  background-size: cover;
+}
+.three_cube{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/cube/img_3.png");
+  background-size: cover;
+}
+.four_cube{
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/cube/img_2.png");
+  background-size: cover;
+}
+
+

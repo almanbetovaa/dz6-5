@@ -1,24 +1,76 @@
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import {Swiper, SwiperSlide} from "swiper/react";
-
-import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import  './one.module.css'
 
-export const SwiperComponents = ({swiperImages, handleChange}) => {
-    return(
-        <Swiper
-            effect={'cards'}
-            grabCursor={true}
-            modules={[EffectCards]}
-            className="mySwiper1"
-        >
-            {swiperImages.map((item, idx) =>
-                <SwiperSlide key={idx}>
-                    Slide {idx++}
+import './one.css';
+
+import { EffectCards } from 'swiper/modules';
+
+export const SwiperComponents =()=> {
+    return (
+        <>
+            <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper"
+            >
+
+                <SwiperSlide>
+                    <div className='one_kr'>
+
+                    </div>
                 </SwiperSlide>
-            )}
-        </Swiper>
-    )
+                <SwiperSlide>
+                    <div className='two_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='three_kr'>
+
+                    </div>
+                </SwiperSlide><SwiperSlide>
+                <div className='four_kr'>
+
+                </div>
+            </SwiperSlide>
+                <SwiperSlide>
+                    <div className='five_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='six_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='seven_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='eight_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='nine_kr'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='ten_kr'>
+
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+        </>
+    );
 }
+
+export default SwiperComponents;

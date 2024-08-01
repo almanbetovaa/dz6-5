@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import {Container} from "@mui/material";
 import TabsComponent from "../components/Tabs";
-import {SwiperSlide} from "swiper/react";
-import {SwiperComponents} from "../components/one/Swiper";
-import One from "../components/one/One";
+// import {SwiperSlide} from "swiper/react";
+import {SwiperComponents} from "../components/one/Swiper"
+import One from "../components/one/One"
 import Two from "../components/two/Two";
 import Three from "../components/three/Three";
+import Four from "../components/four/Four";
+import Five from "../components/five/Five";
 
 const VALUES = {
     itemOne: 'one',
@@ -18,27 +20,9 @@ const VALUES = {
 
 const GetCategories = ({value}) => {
 
-    const swiperImages = [
-        { url: 'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg' },
-        { url: 'https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg?cs=srgb&dl=pexels-mo-eid-9454915.jpg&fm=jpg' },
-        { url: 'https://i.pinimg.com/474x/6c/12/fd/6c12fdc402726c513901a61f512ba3c6.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg' },
-        { url: 'https://i.pinimg.com/736x/58/bd/4f/58bd4fc9ebfccc1f2de419529bbf1a12.jpg'},
-    ]
-
     switch (value) {
         case VALUES.itemOne: {
-            return (
-                <>
-                    <One/>
-                    <SwiperComponents swiperImages={swiperImages} />
-                </>
-                )
+            return <SwiperComponents/>
         }
         case VALUES.itemTwo: {
             return <Two/>
@@ -47,10 +31,10 @@ const GetCategories = ({value}) => {
             return <Three/>
         }
         case VALUES.itemFour: {
-            return <p>Four</p>
+            return <Four/>
         }
         case VALUES.itemFive: {
-            return <p>Five</p>
+            return <Five/>
         }
         default: return <></>
     }

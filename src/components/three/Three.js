@@ -1,24 +1,80 @@
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import './three.module.css'
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-export default function Three () {
+import './three.css';
+
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+
+const Three=()=> {
     return (
         <>
-            <Swiper watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+            <Swiper
+                spaceBetween={30}
+                effect={'fade'}
+                navigation={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[EffectFade, Navigation, Pagination]}
+                className="mySwiper"
+            >
+
+                <SwiperSlide>
+                    <div className='one_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='two_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='three_krd'>
+
+                    </div>
+                </SwiperSlide><SwiperSlide>
+                <div className='four_krd'>
+
+                </div>
+            </SwiperSlide>
+                <SwiperSlide>
+                    <div className='five_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='six_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='seven_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='eight_krd'>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='nine_krd'>
+
+                    </div>
+                </SwiperSlide>
+
+
+
             </Swiper>
         </>
     );
 }
+
+export default Three;

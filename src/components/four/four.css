@@ -1,0 +1,42 @@
+.one_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img.png");
+    background-size: cover;
+}
+.two_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_1.png");
+    background-size: cover;
+}
+.three_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_2.png");
+    background-size: cover;
+}
+.four_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_3.png");
+    background-size: cover;
+}
+.five_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_4.png");
+    background-size: cover;
+}
+.six_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_5.png");
+    background-size: cover;
+}
+.seven_card{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/creative/img_6.png");
+    background-size: cover;
+}
